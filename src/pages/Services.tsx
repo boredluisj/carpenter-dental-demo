@@ -106,7 +106,7 @@ const Services = () => {
             <div className="lg:w-1/2 relative">
               <div className="absolute -inset-4 border border-dark/5 -z-10 -translate-x-8 translate-y-8" />
               <img 
-                src="https://www.cosmeticdentisthoustontx.com/images/slideshow/houston-dentist13.jpg" 
+                src="/images/aesthetic-outcome-v2.png" 
                 alt="Aesthetic Dentistry Outcome" 
                 className="w-full h-[500px] object-cover border border-dark/10"
               />
