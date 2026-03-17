@@ -46,14 +46,14 @@ const Home = () => {
           </div>
 
 
-          <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-6 h-full auto-rows-[minmax(250px,auto)]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 h-full auto-rows-[minmax(250px,auto)]">
             <ServiceCard 
               title="Cosmetic Makeovers"
               description="Transform your confidence with porcelain crowns, veneers, and smile-lengthening procedures tailored to your face."
               icon={<Heart size={20} className="text-primary-600" />}
               image="/images/cosmetic-makeover.png"
               link="/services#cosmetic"
-              className="md:col-span-2 lg:col-span-3 lg:row-span-2 h-full"
+              className="h-full"
               delay={0}
             />
             <ServiceCard 
@@ -62,7 +62,7 @@ const Home = () => {
               icon={<ShieldCheck size={20} className="text-primary-600" />}
               image="/images/lumineers.png"
               link="/services#lumineers"
-              className="md:col-span-2 lg:col-span-3 h-full"
+              className="h-full"
               delay={0.1}
             />
             <ServiceCard 
@@ -71,7 +71,7 @@ const Home = () => {
               icon={<Activity size={20} className="text-primary-600" />}
               image="/images/modern-clinic.png"
               link="/services#general"
-              className="md:col-span-4 lg:col-span-3 h-full"
+              className="md:col-span-2 lg:col-span-1 h-full"
               delay={0.2}
             />
           </div>
