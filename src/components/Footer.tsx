@@ -34,6 +34,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li><Link to="/about" className="text-surface/50 hover:text-surface transition-colors text-sm font-light">About Dr. Carpenter</Link></li>
               <li><Link to="/services" className="text-surface/50 hover:text-surface transition-colors text-sm font-light">Services & Procedures</Link></li>
+              <li><a href="/np-forms.pdf" target="_blank" rel="noopener noreferrer" className="text-surface/50 hover:text-surface transition-colors text-sm font-light">New Patient Forms</a></li>
               <li><a href="https://www.zocdoc.com/practice/anne-m-carpenter-dds-17609?referrerType=widget" target="_blank" className="text-surface/50 hover:text-surface transition-colors text-sm font-light">Book Appointment</a></li>
               <li><a href="#testimonials" className="text-surface/50 hover:text-surface transition-colors text-sm font-light">Patient Experiences</a></li>
             </ul>

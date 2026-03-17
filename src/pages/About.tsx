@@ -24,7 +24,7 @@ const About = () => {
               A Houston Native. <br/>A Clinical <span className="italic">Authority.</span>
             </h1>
             <p className="text-xl text-surface/60 font-light leading-relaxed max-w-2xl">
-              Dr. Anne M. Carpenter pairs Ivy-league precision with a compassionate, neighborly approach that has defined West Houston's restorative standard for over two decades.
+              Dr. Anne M. Carpenter pairs academic rigor from the University of Texas Dental Branch with a compassionate, neighborly approach that has defined West Houston's restorative standard since 2002.
             </p>
           </motion.div>
         </div>
@@ -43,8 +43,8 @@ const About = () => {
             >
               <div className="absolute -inset-4 border border-dark/5 -z-10 translate-x-8 translate-y-8" />
               <img 
-                src="/images/modern-clinic.png" 
-                alt="Dr. Carpenter's Houston Practice" 
+                src="/images/anne-carpenter.jpg" 
+                alt="Dr. Anne M. Carpenter" 
                 className="w-full h-[600px] object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700"
               />
             </motion.div>
@@ -58,10 +58,10 @@ const About = () => {
               <h2 className="text-4xl md:text-5xl font-heading text-dark mb-8">Restoring More Than Just Smiles.</h2>
               <div className="space-y-6 text-dark/70 text-lg font-light leading-relaxed">
                 <p>
-                  As a distinguished graduate of <span className="text-dark font-medium">Rice University</span> and the <span className="text-dark font-medium">University of Texas Health Science Center at San Antonio</span>, Dr. Carpenter brings academic rigor to every restoration.
+                  As a distinguished graduate of the <span className="text-dark font-medium">University of Texas Dental Branch</span> and a native of Houston, Dr. Carpenter brings academic rigor and genuine local care to every restoration. Prior to dental school, she earned her foundational degrees from St. Mary-of-the-Woods College and Texas Tech University.
                 </p>
                 <p>
-                  Her clinical focus is centered on the intersection of long-term oral health and refined aesthetics. Her mastery of Lumineers®, porcelain crowns, and complex restorative procedures ensures results that are both durable and indistinguishable from nature.
+                  Dr. Carpenter is a proud member of the American Dental Association, the Texas Dental Association, and the Texas/American Association of Women Dentists, ensuring her practice remains at the forefront of clinical advancements.
                 </p>
                 <p>
                   Since 2002, her private practice in West Houston has remained committed to a single principle: providing an uncompromising level of personalized care in an environment of absolute comfort.
@@ -74,8 +74,8 @@ const About = () => {
                   <div className="text-xs tracking-widest uppercase text-dark/40">Years Mastery</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-heading text-primary-600 mb-2">Rice</div>
-                  <div className="text-xs tracking-widest uppercase text-dark/40">University Alum</div>
+                  <div className="text-4xl font-heading text-primary-600 mb-2">UT</div>
+                  <div className="text-xs tracking-widest uppercase text-dark/40">Dental Branch</div>
                 </div>
               </div>
             </motion.div>
@@ -94,9 +94,9 @@ const About = () => {
               className="border-l border-dark/5 pl-8"
             >
               <span className="text-primary-600 text-sm font-bold tracking-widest uppercase mb-4 block">Foundations</span>
-              <h3 className="text-2xl font-heading text-dark mb-6">Ivy-League Precision</h3>
+              <h3 className="text-2xl font-heading text-dark mb-6">Academic Excellence</h3>
               <p className="text-dark/60 font-light leading-relaxed">
-                Her background at Rice University fuels a clinical approach rooted in analytical precision and obsessive attention to detail throughout the restorative process.
+                Her background from St. Mary-of-the-Woods College and Texas Tech University fuels a clinical approach rooted in analytical precision and obsessive attention to detail.
               </p>
             </motion.div>
             <motion.div 
@@ -106,10 +106,10 @@ const About = () => {
               transition={{ delay: 0.1 }}
               className="border-l border-dark/5 pl-8"
             >
-              <span className="text-primary-600 text-sm font-bold tracking-widest uppercase mb-4 block">San Antonio Mastery</span>
+              <span className="text-primary-600 text-sm font-bold tracking-widest uppercase mb-4 block">UT Dental Branch</span>
               <h3 className="text-2xl font-heading text-dark mb-6">Clinical Authority</h3>
               <p className="text-dark/60 font-light leading-relaxed">
-                Training at UTHSC San Antonio provided the surgical and restorative foundation required to manage complex cases with predictable, aesthetic outcomes.
+                Training at the esteemed University of Texas Dental Branch provided the surgical and restorative foundation required to manage complex cases with predictable, aesthetic outcomes.
               </p>
             </motion.div>
             <motion.div 
