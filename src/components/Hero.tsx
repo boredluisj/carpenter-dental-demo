@@ -1,101 +1,83 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2, Star, Users } from 'lucide-react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden bg-surface">
-      {/* Background Image with Elegant Wash */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/images/modern-clinic.png"
-          alt="Dr. Carpenter's Clinic Interior"
-          className="w-full h-full object-cover object-center opacity-40 blur-[2px] transition-transform duration-[20s] hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10" />
-      </div>
+    <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-[#0A0A0A]">
+      {/* Background Gradients & Grids */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none" />
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-dark/5 to-dark/20 pointer-events-none" />
+      
+      {/* Animated Spotlight */}
+      <div className="absolute -top-[20%] -left-[10%] w-[100%] h-[100%] bg-primary-600/10 blur-[120px] rounded-full opacity-50 animate-spotlight pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-20 w-full">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
-          <div className="max-w-3xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 border border-dark/10 text-dark/70 text-sm font-medium mb-8 backdrop-blur-sm"
-            >
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
-              </span>
-              West Houston's Premier Clinical Standard Since 2002
-            </motion.div>
+      <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
+        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="lg:w-1/2"
+          >
+            <div className="inline-flex items-center gap-3 px-4 py-2 bg-surface/5 border border-surface/10 backdrop-blur-md mb-8">
+              <span className="w-2 h-2 bg-primary-500 rounded-full animate-pulse" />
+              <span className="text-surface/60 text-[10px] uppercase tracking-[0.2em] font-medium"> Clinical Mastery Since 2002 </span>
+            </div>
+            
+            <h1 className="text-6xl md:text-8xl font-heading text-surface mb-8 leading-[1.05] tracking-tight">
+              Clinical Artistry. <br/>
+              <span className="text-primary-400 italic font-light">Enduring Results.</span>
+            </h1>
+            
+            <p className="text-xl text-surface/60 font-light leading-relaxed mb-12 max-w-xl">
+              Dr. Anne M. Carpenter combines two decades of clinical mastery with aesthetic precision to rebuild not just smiles, but confidence. Houston's destination for elite restorative dentistry.
+            </p>
 
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-6xl lg:text-8xl font-heading text-dark mb-8 leading-[1.05] tracking-tight"
-            >
-              The New Era of <br />
-              <span className="text-primary-600 italic">Dental Artistry.</span>
-            </motion.h1>
-
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-xl text-dark/70 max-w-xl mb-12 leading-relaxed font-light"
-            >
-              Where clinical rigor meets aesthetic refinement. Dr. Anne M. Carpenter defines the Houston standard for transformative restorative care and luxury cosmetic dentistry.
-            </motion.p>
-
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row items-center gap-4"
-            >
+            <div className="flex flex-col sm:flex-row items-center gap-6">
               <a 
                 href="https://www.zocdoc.com/practice/anne-m-carpenter-dds-17609?referrerType=widget" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-12 py-5 rounded-full bg-dark text-surface font-medium hover:bg-primary-600 transition-all shadow-xl hover:-translate-y-1 text-lg"
+                className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 bg-primary-600 text-surface font-medium hover:bg-primary-500 transition-all shadow-2xl shadow-primary-900/20"
               >
-                Secure Appointment on ZocDoc
+                Book via ZocDoc
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <Link 
                 to="/services" 
-                className="w-full sm:w-auto inline-flex items-center justify-center px-12 py-5 rounded-full bg-transparent text-dark font-medium hover:bg-dark/5 border border-dark/20 transition-all text-lg"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 bg-transparent text-surface border border-surface/20 hover:bg-surface/5 transition-all"
               >
-                Explore Services
+                Clinical Procedures
               </Link>
-            </motion.div>
+            </div>
 
-            <motion.div 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="mt-14 flex flex-col sm:flex-row items-start sm:items-center gap-8 text-sm text-dark/60 pt-8 border-t border-dark/10"
-            >
-              <div className="flex items-center gap-2">
-                <CheckCircle2 size={18} className="text-primary-600" />
-                <span>Advanced Restoration Warranty</span>
+            <div className="mt-16 flex flex-wrap gap-8 opacity-40">
+              <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-surface font-light">
+                <CheckCircle2 size={14} /> Advanced Restoration
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 size={18} className="text-primary-600" />
-                <span>IV Sedation Safety Protocol</span>
+              <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-surface font-light">
+                <CheckCircle2 size={14} /> IV Sedation Safety
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 size={18} className="text-primary-600" />
-                <span>Clinical Precision Guarantee</span>
-              </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
 
-
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="lg:w-1/2 relative"
+          >
+            <div className="absolute -inset-4 border border-primary-600/20 translate-x-4 translate-y-4 -z-10" />
+            <div className="relative overflow-hidden aspect-[4/5] lg:aspect-square">
+                <img 
+                    src="/images/modern-clinic.png" 
+                    alt="Dr. Carpenter Clinical Suite" 
+                    className="w-full h-full object-cover grayscale-[0.3] hover:grayscale-0 transition-all duration-1000"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/60 to-transparent" />
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

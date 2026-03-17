@@ -30,40 +30,49 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Services Overview */}
-      <section className="py-24 bg-surface">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-primary-600 font-bold tracking-wider uppercase text-sm mb-4 block">Our Treatments</span>
-            <h2 className="text-4xl md:text-5xl font-bold font-heading text-dark mb-6">Elevating Every Aspect of Your Smile.</h2>
-            <p className="text-xl text-gray-600">
-              From sophisticated aesthetic makeovers to comprehensive preventive care, we deliver results that maximize your personal health and appearance.
+      {/* Services Overview - Bento Grid Transformation */}
+      <section className="py-24 bg-surface relative overflow-hidden">
+        {/* Background Patterns */}
+        <div className="absolute inset-0 bg-dots-pattern [background-size:20px_20px] opacity-[0.03] pointer-events-none" />
+        
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+            <div className="max-w-2xl">
+              <span className="text-primary-600 font-bold tracking-widest uppercase text-xs mb-4 block">Clinical Expertise</span>
+              <h2 className="text-4xl md:text-6xl font-bold font-heading text-dark mb-6 leading-[1.1]">Elite Procedures. <br/><span className="italic font-light opacity-80">Redefining Mastery.</span></h2>
+            </div>
+            <p className="text-lg text-gray-600 max-w-sm font-light leading-relaxed">
+              From sophisticated aesthetic makeovers to comprehensive clinical restoration.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-6 h-full auto-rows-[minmax(250px,auto)]">
             <ServiceCard 
               title="Cosmetic Makeovers"
               description="Transform your confidence with porcelain crowns, veneers, and smile-lengthening procedures tailored to your face."
               icon={<Heart size={20} className="text-primary-600" />}
               image="/images/cosmetic-makeover.png"
               link="/services#cosmetic"
+              className="md:col-span-2 lg:col-span-3 lg:row-span-2 h-full"
               delay={0}
             />
             <ServiceCard 
               title="Lumineers®"
-              description="The permanent, non-invasive way to correct gaps and discoloration without the traditional drilling of veneers."
+              description="The permanent, non-invasive way to correct gaps and discoloration without drilling."
               icon={<ShieldCheck size={20} className="text-primary-600" />}
               image="/images/lumineers.png"
               link="/services#lumineers"
+              className="md:col-span-2 lg:col-span-3 h-full"
               delay={0.1}
             />
             <ServiceCard 
-              title="Comprehensive Care"
-              description="West Houston's standard for routine cleanings, digital diagnostics, and oral health maintenance for all ages."
+              title="State-of-the-Art Clinic"
+              description="West Houston's standard for routine diagnostics and maintenance."
               icon={<Activity size={20} className="text-primary-600" />}
               image="/images/modern-clinic.png"
               link="/services#general"
+              className="md:col-span-4 lg:col-span-3 h-full"
               delay={0.2}
             />
           </div>

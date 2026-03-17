@@ -87,6 +87,7 @@ const Footer = () => {
           <div className="flex items-center justify-center gap-8">
             <Link to="/privacy" className="text-surface/30 hover:text-surface transition-colors text-[10px] tracking-widest uppercase">Privacy</Link>
             <Link to="/terms" className="text-surface/30 hover:text-surface transition-colors text-[10px] tracking-widest uppercase">Terms</Link>
+            <Link to="/imprint" className="text-surface/30 hover:text-surface transition-colors text-[10px] tracking-widest uppercase">Imprint</Link>
           </div>
         </div>
       </div>

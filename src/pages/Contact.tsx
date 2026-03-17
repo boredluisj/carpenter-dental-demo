@@ -102,13 +102,21 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Map Placeholder */}
-      <section className="h-96 bg-gray-200 w-full relative">
-        <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-          <div className="text-center">
-            <MapPin size={48} className="mx-auto mb-4 opacity-50" />
-            <p className="font-medium">Interactive Map Integration</p>
-          </div>
+      {/* Map Integration */}
+      <section className="h-96 w-full relative grayscale-[0.5] hover:grayscale-0 transition-all duration-700">
+        <iframe 
+          title="Dr. Anne M. Carpenter Practice Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.050410464672!2d-95.5947321!3d29.728444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640df70afb4f0b3%3A0xc3f8e5616f733189!2s12121%20Richmond%20Ave%20%23219%2C%20Houston%2C%20TX%2077082!5e0!3m2!1sen!2sus!4v1710705000000!5m2!1sen!2sus" 
+          width="100%" 
+          height="100%" 
+          style={{ border: 0 }} 
+          allowFullScreen={true} 
+          loading="lazy" 
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div className="absolute top-8 left-8 bg-dark p-6 border border-surface/10 hidden md:block">
+          <h4 className="text-surface font-heading text-lg mb-2 uppercase tracking-widest">Visit our office</h4>
+          <p className="text-surface/60 text-xs font-light tracking-wide uppercase">12121 Richmond Ave<br/>Suite 219, Houston</p>
         </div>
       </section>
     </>
