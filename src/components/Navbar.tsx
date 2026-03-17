@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
-import ApexLogo from './ApexLogo';
+import CarpenterLogo from './CarpenterLogo';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -39,8 +39,8 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2 z-50">
           <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center space-x-2" onClick={() => window.scrollTo(0, 0)}>
-            <ApexLogo />
-          </Link>  <span className="text-xs font-medium text-gray-500 tracking-wider uppercase ml-4 hidden sm:block">Implant Specialists</span>
+            <CarpenterLogo />
+          </Link>  <span className="text-xs font-medium text-gray-500 tracking-wider uppercase ml-4 hidden sm:block">Aesthetic & General Dentistry</span>
           </div>
         </Link>
 

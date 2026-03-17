@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: { 50: '#fdfbf7', 100: '#f9f5eb', 200: '#f2e8d3', 300: '#e9d7b4', 400: '#dec28f', 500: '#d2ab65', 600: '#c2934a', 700: '#a37537', 800: '#845e31', 900: '#6c4d2a' },
-        accent: { 50: '#f0f4f8', 100: '#d9e2ec', 200: '#bcccdc', 300: '#9fb3c8', 400: '#829ab1', 500: '#627d98', 600: '#486581', 700: '#334e68', 800: '#243b53', 900: '#102a43' },
-        surface: '#fafafa',
-        dark: '#102a43',
+        primary: { 50: '#f0f7fb', 100: '#e1eff7', 200: '#bce0f0', 300: '#86c6e5', 400: '#4ba7d6', 500: '#629ABB', 600: '#4a7ea3', 700: '#3d6784', 800: '#35576f', 900: '#304a5d' },
+        secondary: { 50: '#fffef2', 100: '#fffbd9', 200: '#fff6b3', 300: '#fff04B', 400: '#ffeb26', 500: '#ffe100', 600: '#ccb400', 700: '#998700', 800: '#665a00', 900: '#332d00' },
+        surface: '#F4ECE3',
+        dark: '#5B4840',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        heading: ['Outfit', 'Inter', 'sans-serif'],
+        sans: ['Inter', 'Helvetica', 'Arial', 'sans-serif'],
+        heading: ['Sorts Mill Goudy', 'Georgia', 'serif'],
       },
     },
   },

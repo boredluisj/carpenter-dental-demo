@@ -7,22 +7,23 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Apex Dental Implants</title>
-        <meta name="description" content="Schedule your free consultation for dental implants. Reach out to the Apex Dental team today." />
+        <title>Connect | Dr. Anne M. Carpenter, DDS</title>
+        <meta name="description" content="Reach our Houston clinical offices. Dedicated patient support and restorative consultations in the heart of West Houston." />
       </Helmet>
 
       {/* Hero */}
-      <section className="pt-32 pb-20 bg-dark text-white">
+      <section className="pt-32 pb-20 bg-dark text-surface">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-center max-w-3xl mx-auto"
+            className="max-w-4xl"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6">Let's Talk About Your Smile.</h1>
-            <p className="text-xl text-gray-400">
-              Ready to take the first step towards a permanent, beautiful smile? Contact us today to schedule your complimentary 3D evaluation.
+            <span className="text-primary-600 font-bold tracking-widest uppercase text-xs mb-6 block">Communication</span>
+            <h1 className="text-5xl md:text-7xl font-heading mb-8">Clinical Inquiry. <br/><span className="italic">Direct Contact.</span></h1>
+            <p className="text-xl text-surface/60 font-light leading-relaxed max-w-2xl">
+              Our clinical administration is dedicated to facilitating a seamless experience from your initial inquiry to restorative completion. Reach out to our Houston office today.
             </p>
           </motion.div>
         </div>
@@ -42,44 +43,47 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center text-primary-600 shrink-0">
-                    <MapPin size={24} />
+              <div className="space-y-12">
+                <div className="flex items-start gap-6">
+                  <div className="w-12 h-12 border border-primary-600 flex items-center justify-center text-primary-600 shrink-0">
+                    <MapPin size={20} />
                   </div>
                   <div>
-                    <p className="font-bold text-dark">Clinic Location</p>
-                    <p className="text-gray-600">100 Premium Way, Suite 400<br/>Beverly Hills, CA 90210</p>
+                    <p className="text-xs font-bold tracking-widest uppercase text-primary-600 mb-2">Practice Location</p>
+                    <p className="text-dark/80 font-medium leading-relaxed">7515 S Main St, Suite 590<br/>Houston, TX 77030</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center text-primary-600 shrink-0">
-                    <Phone size={24} />
+                <div className="flex items-start gap-6">
+                  <div className="w-12 h-12 border border-primary-600 flex items-center justify-center text-primary-600 shrink-0">
+                    <Phone size={20} />
                   </div>
                   <div>
-                    <p className="font-bold text-dark">Call Us</p>
-                    <p className="text-gray-600">(800) 555-0199</p>
+                    <p className="text-xs font-bold tracking-widest uppercase text-primary-600 mb-2">Direct Line</p>
+                    <p className="text-dark/80 font-medium">(713) 660-0999</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center text-primary-600 shrink-0">
-                    <Mail size={24} />
+                <div className="flex items-start gap-6">
+                  <div className="w-12 h-12 border border-primary-600 flex items-center justify-center text-primary-600 shrink-0">
+                    <Mail size={20} />
                   </div>
                   <div>
-                    <p className="font-bold text-dark">Email Us</p>
-                    <p className="text-gray-600">contact@apeximplants.com</p>
+                    <p className="text-xs font-bold tracking-widest uppercase text-primary-600 mb-2">Clinical Inquiry</p>
+                    <p className="text-dark/80 font-medium">contact@dr-carpenter.com</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center text-primary-600 shrink-0">
-                    <Clock size={24} />
+                <div className="flex items-start gap-6">
+                  <div className="w-12 h-12 border border-primary-600 flex items-center justify-center text-primary-600 shrink-0">
+                    <Clock size={20} />
                   </div>
                   <div>
-                    <p className="font-bold text-dark">Hours of Operation</p>
-                    <p className="text-gray-600">Mon-Fri: 8:00 AM - 6:00 PM<br/>Sat: By Appointment Only<br/>Sun: Closed</p>
+                    <p className="text-xs font-bold tracking-widest uppercase text-primary-600 mb-2">Office Hours</p>
+                    <p className="text-dark/80 font-medium leading-relaxed">
+                      Mon – Thur: 8:00 AM – 5:00 PM<br/>
+                      Fri – Sun: Closed
+                    </p>
                   </div>
                 </div>
               </div>
@@ -87,8 +91,9 @@ const Contact = () => {
 
             {/* Form */}
             <div className="lg:w-2/3">
-              <div className="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
-                <h3 className="text-2xl font-bold font-heading text-dark mb-6">Request a Consultation</h3>
+              <div className="bg-white p-8 md:p-12 border border-dark/10 relative">
+                <div className="absolute -inset-2 border border-dark/5 -z-10 translate-x-4 translate-y-4" />
+                <h3 className="text-2xl font-bold font-heading text-dark mb-8 uppercase tracking-wide">Consultation Inquiry</h3>
                 <ContactForm />
               </div>
             </div>

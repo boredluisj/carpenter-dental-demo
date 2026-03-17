@@ -16,93 +16,95 @@ const ContactForm = () => {
   if (formStatus === 'success') {
     return (
       <motion.div 
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="bg-primary-50 border border-primary-200 rounded-3xl p-8 md:p-12 text-center"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="bg-surface border border-dark/10 p-12 text-center relative"
       >
-        <div className="w-20 h-20 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mx-auto mb-6">
-          <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+        <div className="absolute -inset-2 border border-dark/5 -z-10 translate-x-3 translate-y-3" />
+        <div className="w-16 h-16 border border-primary-600 text-primary-600 flex items-center justify-center mx-auto mb-8">
+          <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="text-3xl font-bold font-heading text-dark mb-4">Request Received</h3>
-        <p className="text-gray-600 text-lg">
-          Thank you for reaching out. A member of our clinical team will contact you within 24 hours to schedule your consultation.
+        <h3 className="text-3xl font-heading text-dark mb-4 uppercase tracking-wide">Inquiry Received</h3>
+        <p className="text-dark/60 text-lg font-light leading-relaxed">
+          Your documentation has been received. Our clinical coordinators will contact you within 24 clinical hours.
         </p>
       </motion.div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100">
-      <h3 className="text-3xl font-bold font-heading text-dark mb-8">Request a Consultation</h3>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <div>
-          <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+    <form onSubmit={handleSubmit} className="space-y-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="space-y-2">
+          <label htmlFor="firstName" className="text-xs font-bold tracking-widest uppercase text-dark/40">First Name</label>
           <input 
             type="text" 
             id="firstName" 
             required 
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all placeholder:text-gray-400"
-            placeholder="Jane"
+            className="w-full bg-surface/30 px-5 py-4 border border-dark/10 focus:border-primary-600 outline-none transition-colors text-dark placeholder:text-dark/20 font-light"
+            placeholder="Alexandra"
           />
         </div>
-        <div>
-          <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+        <div className="space-y-2">
+          <label htmlFor="lastName" className="text-xs font-bold tracking-widest uppercase text-dark/40">Last Name</label>
           <input 
             type="text" 
             id="lastName" 
             required 
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all placeholder:text-gray-400"
-            placeholder="Doe"
+            className="w-full bg-surface/30 px-5 py-4 border border-dark/10 focus:border-primary-600 outline-none transition-colors text-dark placeholder:text-dark/20 font-light"
+            placeholder="Sterling"
           />
         </div>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="space-y-2">
+          <label htmlFor="email" className="text-xs font-bold tracking-widest uppercase text-dark/40">Email Address</label>
           <input 
             type="email" 
             id="email" 
             required 
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all placeholder:text-gray-400"
-            placeholder="jane@example.com"
+            className="w-full bg-surface/30 px-5 py-4 border border-dark/10 focus:border-primary-600 outline-none transition-colors text-dark placeholder:text-dark/20 font-light"
+            placeholder="alex.s@example.com"
           />
         </div>
-        <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+        <div className="space-y-2">
+          <label htmlFor="phone" className="text-xs font-bold tracking-widest uppercase text-dark/40">Phone Number</label>
           <input 
             type="tel" 
             id="phone" 
             required 
-            className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all placeholder:text-gray-400"
-            placeholder="(555) 123-4567"
+            className="w-full bg-surface/30 px-5 py-4 border border-dark/10 focus:border-primary-600 outline-none transition-colors text-dark placeholder:text-dark/20 font-light"
+            placeholder="(713) 000-0000"
           />
         </div>
       </div>
 
-      <div className="mb-8">
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">How can we help you?</label>
+      <div className="space-y-2">
+        <label htmlFor="message" className="text-xs font-bold tracking-widest uppercase text-dark/40">Procedure of Interest</label>
         <textarea 
           id="message" 
           rows={4} 
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all placeholder:text-gray-400 resize-none"
-          placeholder="I'm interested in the medical weight loss program..."
+          className="w-full bg-surface/30 px-5 py-4 border border-dark/10 focus:border-primary-600 outline-none transition-colors text-dark placeholder:text-dark/20 font-light resize-none"
+          placeholder="Please describe your restorative or aesthetic goals..."
         ></textarea>
       </div>
 
       <button 
         type="submit" 
         disabled={formStatus === 'submitting'}
-        className={`w-full py-4 rounded-xl text-white font-medium text-lg transition-all shadow-lg ${
-          formStatus === 'submitting' ? 'bg-primary-400 cursor-not-allowed' : 'bg-primary-600 hover:bg-primary-700 hover:shadow-primary-600/25'
-        }`}
+        className="w-full group relative overflow-hidden"
       >
-        {formStatus === 'submitting' ? 'Sending Request...' : 'Submit Request'}
+        <div className="absolute inset-0 bg-dark transform translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+        <div className="relative border border-dark py-5 text-dark font-bold tracking-[0.2em] uppercase text-sm group-hover:text-surface transition-colors">
+          {formStatus === 'submitting' ? 'Processing Documentation...' : 'Submit Clinical Inquiry'}
+        </div>
       </button>
-      <p className="mt-4 text-xs text-gray-500 text-center">
-        Your information is secure and HIPAA compliant. We will never share your personal data.
+
+      <p className="text-[10px] text-dark/40 text-center uppercase tracking-widest leading-loose">
+        Clinical confidentiality guaranteed. <br/> Protected under standard medical privacy protocols.
       </p>
     </form>
   );

@@ -29,11 +29,11 @@ const TestimonialSection = () => {
   return (
     <section className="py-24 bg-surface" id="testimonials">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-primary-600 font-bold tracking-wider uppercase text-sm mb-4 block">Proven Excellence</span>
-          <h2 className="text-4xl md:text-5xl font-bold font-heading text-dark mb-6">Patient Experiences</h2>
-          <p className="text-xl text-gray-600">
-            Discover why Dr. Carpenter has been Houston's choice for personalized dental care for over two decades.
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <span className="text-primary-600 font-bold tracking-wider uppercase text-sm mb-4 block">Proven Reputation</span>
+          <h2 className="text-5xl md:text-6xl font-heading text-dark mb-8">Clinical Authority. Patient Trust.</h2>
+          <p className="text-xl text-dark/70 font-light">
+            Reflecting over two decades of restorative excellence and personalized care in the heart of West Houston.
           </p>
         </div>
 
@@ -45,26 +45,26 @@ const TestimonialSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col"
+              className="bg-white p-10 border border-dark/10 flex flex-col shadow-sm hover:border-primary-600/30 transition-all duration-500"
             >
-              <div className="flex items-center gap-1 text-primary-400 mb-6">
+              <div className="flex items-center gap-1 text-secondary-300 mb-8">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} size={18} fill="currentColor" />
+                  <Star key={i} size={16} fill="currentColor" />
                 ))}
               </div>
-              <Quote size={40} className="text-primary-100 mb-4" />
-              <p className="text-gray-700 leading-relaxed mb-8 italic flex-grow">
+              <Quote size={32} className="text-primary-200 mb-6" />
+              <p className="text-dark/80 leading-relaxed mb-10 italic flex-grow font-light text-lg">
                 "{testimonial.content}"
               </p>
               <div className="flex items-center gap-4 mt-auto">
                 <img 
                   src={testimonial.image} 
                   alt={testimonial.name} 
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-14 h-14 object-cover border border-dark/10 grayscale-[0.5]"
                 />
                 <div>
-                  <h4 className="font-bold text-dark">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-500">{testimonial.role}</p>
+                  <h4 className="font-heading text-xl text-dark">{testimonial.name}</h4>
+                  <p className="text-sm text-dark/50 tracking-wide uppercase">{testimonial.role}</p>
                 </div>
               </div>
             </motion.div>

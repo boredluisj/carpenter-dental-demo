@@ -5,8 +5,8 @@ const Imprint = () => {
   return (
     <>
       <Helmet>
-        <title>Imprint / Legal Notice | Apex Dental Implants</title>
-        <meta name="description" content="Legal notice and company information for Apex Dental Implants." />
+        <title>Imprint / Legal Notice | Anne Carpenter, DDS</title>
+        <meta name="description" content="Legal notice and company information for Dr. Anne M. Carpenter's Houston dental practice." />
       </Helmet>
 
       <section className="pt-32 pb-20 bg-dark text-white">
@@ -25,33 +25,33 @@ const Imprint = () => {
         <div className="max-w-4xl mx-auto px-6 prose prose-lg prose-slate">
           <h2>Provider Identification</h2>
           <p>
-            <strong>Apex Dental Implants, PC</strong><br />
-            100 Premium Way, Suite 400<br />
-            Beverly Hills, CA 90210<br />
+            <strong>Anne M. Carpenter, DDS</strong><br />
+            12121 Richmond Avenue, Suite 219<br />
+            Houston, TX 77082<br />
             United States
           </p>
 
           <h2>Contact</h2>
           <ul>
-            <li><strong>Phone:</strong> (800) 555-0199</li>
-            <li><strong>Email:</strong> contact@apeximplants.com</li>
-            <li><strong>Website:</strong> www.apeximplants.com</li>
+            <li><strong>Phone:</strong> (281) 497-5001</li>
+            <li><strong>Email:</strong> office@annecarpenterdds.com</li>
+            <li><strong>Website:</strong> www.cosmeticdentisthoustontx.com</li>
           </ul>
 
           <h2>Responsible for Content</h2>
           <p>
-            Dr. Michael Apex, DMD<br />
-            Lead Oral Surgeon & Medical Director
+            Dr. Anne M. Carpenter, DDS<br />
+            Medical Director
           </p>
 
           <h2>Licensing & Certification</h2>
           <p>
-            Our oral surgeons are licensed to practice dentistry and maxillofacial surgery in the State of California. Associated clinical guidelines are regulated by the Dental Board of California.
+            Dr. Anne Carpenter is licensed to practice dentistry in the State of Texas. Clinical guidelines are regulated by the Texas State Board of Dental Examiners.
           </p>
 
           <h2>Dispute Resolution</h2>
           <p>
-            We are dedicated to resolving patient concerns directly and amicably. Please contact our patient relations team at patientcare@apeximplants.com to address any issues.
+            We are dedicated to resolving patient concerns directly and amicably. Please contact our patient relations team at office@annecarpenterdds.com to address any issues.
           </p>
 
           <h2>Copyright Notice</h2>

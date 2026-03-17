@@ -19,30 +19,30 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, ima
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay }}
-      className="group relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full"
+      className="group relative bg-white border border-dark/10 flex flex-col h-full hover:border-primary-600/30 transition-all duration-500"
     >
-      <div className="relative h-64 overflow-hidden">
-        <div className="absolute inset-0 bg-dark/20 group-hover:bg-dark/10 transition-colors z-10" />
+      <div className="relative h-72 overflow-hidden">
+        <div className="absolute inset-0 bg-dark/5 transition-colors z-10" />
         <img 
           src={image} 
           alt={title} 
-          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+          className="w-full h-full object-cover grayscale-[0.2] transition-all duration-700 hover:grayscale-0 hover:scale-110"
         />
-        <div className="absolute top-4 left-4 z-20 w-12 h-12 bg-white rounded-xl flex items-center justify-center text-primary-600 shadow-lg">
+        <div className="absolute top-6 left-6 z-20 w-12 h-12 bg-surface text-dark border border-dark/10 flex items-center justify-center shadow-sm">
           {icon}
         </div>
       </div>
       
-      <div className="p-8 flex flex-col flex-grow">
-        <h3 className="text-2xl font-bold font-heading text-dark mb-4">{title}</h3>
-        <p className="text-gray-600 leading-relaxed mb-8 flex-grow">
+      <div className="p-10 flex flex-col flex-grow">
+        <h3 className="text-3xl font-heading text-dark mb-4">{title}</h3>
+        <p className="text-dark/70 leading-relaxed mb-10 flex-grow font-light">
           {description}
         </p>
         <Link 
           to={link}
-          className="inline-flex items-center gap-2 text-primary-600 font-medium hover:text-primary-700 transition-colors mt-auto group/link"
+          className="inline-flex items-center gap-3 text-dark font-medium border-b border-dark/20 pb-1 w-fit group/link hover:border-primary-600 hover:text-primary-600 transition-all"
         >
-          Learn more
+          Explore Procedure
           <ArrowRight size={18} className="transform group-hover/link:translate-x-1 transition-transform" />
         </Link>
       </div>

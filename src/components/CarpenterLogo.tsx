@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const ApexLogo = ({ className = "" }: { className?: string }) => {
+const CarpenterLogo = ({ className = "" }: { className?: string }) => {
   return (
     <div className={`flex items-center gap-2 ${className}`}>
       <motion.svg 
@@ -49,4 +49,4 @@ const ApexLogo = ({ className = "" }: { className?: string }) => {
   );
 };
 
-export default ApexLogo;
+export default CarpenterLogo;

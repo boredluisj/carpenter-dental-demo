@@ -4,14 +4,14 @@ import { ArrowRight, Phone } from 'lucide-react';
 
 const CTASection = () => {
   return (
-    <section className="py-24 relative overflow-hidden bg-dark">
+    <section className="py-24 relative overflow-hidden bg-surface border-t border-dark/5">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1598256989800-fea5f6170560?auto=format&fit=crop&q=80&w=2600" 
-          alt="Dental clinic background" 
-          className="w-full h-full object-cover object-center opacity-20 transform scale-105"
+          src="https://www.cosmeticdentisthoustontx.com/images/slideshow/houston-dentist12.jpg" 
+          alt="Dr. Carpenter's Clinic" 
+          className="w-full h-full object-cover object-center opacity-30 blur-[2px] transform scale-105"
         />
-        <div className="absolute inset-0 bg-dark/80 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-surface via-surface/90 to-surface" />
       </div>
 
       <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
@@ -21,32 +21,34 @@ const CTASection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <span className="text-primary-400 font-bold tracking-wider uppercase text-sm mb-4 block">Take The First Step</span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 font-heading">
-            Ready to Reclaim <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-accent-400">Your Smile?</span>
+          <span className="text-primary-600 font-bold tracking-wider uppercase text-sm mb-4 block">Refine Your Smile</span>
+          <h2 className="text-5xl md:text-7xl font-heading text-dark mb-8">
+            Ready for a New Standard of <span className="text-primary-600 italic">Dental Excellence?</span>
           </h2>
-          <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl mx-auto">
-            Schedule your comprehensive 3D evaluation today. Find out if you're a candidate for our life-changing permanent implant procedures.
+          <p className="text-xl text-dark/70 mb-12 leading-relaxed max-w-2xl mx-auto font-light">
+            Whether you are seeking restorative mastery or an aesthetic transformation, Dr. Anne M. Carpenter provides the clinical authority you deserve.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link 
-              to="/contact" 
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-primary-600 text-white font-medium hover:bg-primary-500 transition-all shadow-[0_0_20px_rgba(210,171,101,0.3)] hover:shadow-primary-500/50 text-lg hover:scale-105"
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <a 
+              href="https://www.zocdoc.com/practice/anne-m-carpenter-dds-17609?referrerType=widget" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-12 py-5 bg-dark text-surface font-medium hover:bg-primary-600 transition-all shadow-xl hover:-translate-y-1 text-lg"
             >
-              Book Free Consultation
-              <ArrowRight size={20} />
-            </Link>
+              Secure ZocDoc Appointment
+              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+            </a>
             
-              <a 
-                href="tel:2814975001"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-surface/10 text-white font-medium hover:bg-surface/20 transition-all backdrop-blur-md text-lg border border-white/10"
-              >
-                <Phone size={20} className="text-primary-400" />
-                (281) 497-5001
-              </a>
+            <a 
+              href="tel:2814975001"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-12 py-5 bg-transparent text-dark font-medium hover:bg-dark/5 transition-all text-lg border border-dark/20"
+            >
+              <Phone size={20} className="text-primary-600" />
+              (281) 497-5001
+            </a>
           </div>
-          <p className="mt-8 text-gray-400 text-sm">Flexible financing options available. We work with most major insurance plans.</p>
+          <p className="mt-10 text-dark/50 text-sm tracking-wide">Serving the West Houston community since 2002. Clinical excellence prioritized.</p>
         </motion.div>
       </div>
     </section>
