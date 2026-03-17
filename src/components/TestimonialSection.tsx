@@ -37,7 +37,7 @@ const TestimonialSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -45,26 +45,27 @@ const TestimonialSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white p-10 border border-dark/10 flex flex-col shadow-sm hover:border-primary-600/30 transition-all duration-500"
+              className="bg-surface p-12 border border-dark/5 flex flex-col hover:border-primary-500/20 transition-all duration-700 relative group"
             >
-              <div className="flex items-center gap-1 text-secondary-300 mb-8">
+              <div className="absolute top-0 right-0 w-16 h-16 bg-primary-500/[0.02] -z-10 group-hover:bg-primary-500/[0.05] transition-colors" />
+              <div className="flex items-center gap-1.5 text-primary-500 mb-10">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} size={16} fill="currentColor" />
+                  <Star key={i} size={14} fill="currentColor" strokeWidth={0} />
                 ))}
               </div>
-              <Quote size={32} className="text-primary-200 mb-6" />
-              <p className="text-dark/80 leading-relaxed mb-10 italic flex-grow font-light text-lg">
+              <Quote size={40} className="text-primary-500/10 mb-8" />
+              <p className="text-dark/70 leading-relaxed mb-12 italic flex-grow font-light text-xl">
                 "{testimonial.content}"
               </p>
-              <div className="flex items-center gap-4 mt-auto">
+              <div className="flex items-center gap-5 mt-auto border-t border-dark/5 pt-8">
                 <img 
                   src={testimonial.image} 
                   alt={testimonial.name} 
-                  className="w-14 h-14 object-cover border border-dark/10 grayscale-[0.5]"
+                  className="w-16 h-16 object-cover border border-dark/5 grayscale-[40%] group-hover:grayscale-0 transition-all duration-700"
                 />
                 <div>
-                  <h4 className="font-heading text-xl text-dark">{testimonial.name}</h4>
-                  <p className="text-sm text-dark/50 tracking-wide uppercase">{testimonial.role}</p>
+                  <h4 className="font-heading text-2xl text-dark mb-1">{testimonial.name}</h4>
+                  <p className="text-[10px] text-dark/30 tracking-[0.2em] font-bold uppercase">{testimonial.role}</p>
                 </div>
               </div>
             </motion.div>

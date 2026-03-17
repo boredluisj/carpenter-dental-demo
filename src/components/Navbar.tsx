@@ -31,27 +31,26 @@ const Navbar = () => {
 
   return (
     <header 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-primary-50/50 ${
+      className={`fixed top-0 w-full z-50 transition-all duration-300 bg-surface/90 backdrop-blur-md border-b border-dark/5 ${
         isScrolled ? 'py-3 shadow-md' : 'py-5 shadow-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 z-50">
-          <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center space-x-2" onClick={() => window.scrollTo(0, 0)}>
-            <CarpenterLogo />
-          </Link>  <span className="text-xs font-medium text-gray-500 tracking-wider uppercase ml-4 hidden sm:block">Aesthetic & General Dentistry</span>
-          </div>
+        <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-4 z-50">
+          <CarpenterLogo />
+          <span className="text-[10px] font-medium text-dark/40 uppercase tracking-[0.2em] hidden lg:block border-l border-dark/10 pl-4">
+            Aesthetic & General Dentistry
+          </span>
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-10">
           {navLinks.map((link) => (
             <Link 
               key={link.name} 
               to={link.path}
-              className={`text-sm font-medium transition-colors hover:text-primary-600 ${
-                location.pathname === link.path ? 'text-primary-600' : 'text-gray-600'
+              className={`text-[11px] uppercase tracking-[0.2em] font-bold transition-all hover:text-primary-600 ${
+                location.pathname === link.path ? 'text-primary-600' : 'text-dark/60'
               }`}
             >
               {link.name}
@@ -59,9 +58,9 @@ const Navbar = () => {
           ))}
           <Link 
             to="/contact" 
-            className="px-6 py-2.5 rounded-full bg-dark text-white text-sm font-medium hover:bg-gray-800 transition-colors shadow-lg shadow-dark/10"
+            className="px-8 py-3 bg-primary-500 text-dark text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-primary-400 transition-all shadow-xl shadow-primary-500/20 rounded-sm"
           >
-            Book Free Consultation
+            Clinical Consultation
           </Link>
         </nav>
 

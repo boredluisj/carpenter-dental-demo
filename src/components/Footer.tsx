@@ -42,37 +42,37 @@ const Footer = () => {
           {/* Contact */}
           <div>
             <h3 className="font-heading text-xl text-surface mb-8">Inquiries</h3>
-            <ul className="space-y-5">
-              <li className="flex items-start gap-4 text-surface/50 text-sm font-light">
-                <MapPin size={18} className="text-primary-600 shrink-0 mt-0.5" />
+            <ul className="space-y-6">
+              <li className="flex items-start gap-4 text-surface/40 text-[13px] font-light">
+                <MapPin size={18} className="text-primary-500 shrink-0 mt-0.5" />
                 <span className="leading-relaxed">12121 Richmond Avenue<br/>Suite 219, Houston, TX 77082</span>
               </li>
-              <li className="flex items-center gap-4 text-surface/50 text-sm font-light">
-                <Phone size={18} className="text-primary-600 shrink-0" />
+              <li className="flex items-center gap-4 text-surface/40 text-[13px] font-light">
+                <Phone size={18} className="text-primary-500 shrink-0" />
                 <span>(281) 497-5001</span>
               </li>
-              <li className="flex items-center gap-4 text-surface/50 text-sm font-light">
-                <Mail size={18} className="text-primary-600 shrink-0" />
+              <li className="flex items-center gap-4 text-surface/40 text-[13px] font-light">
+                <Mail size={18} className="text-primary-500 shrink-0" />
                 <span>office@annecarpenterdds.com</span>
               </li>
             </ul>
           </div>
-
+ 
           {/* Hours */}
           <div>
-            <h3 className="font-heading text-xl text-surface mb-8">Hours</h3>
-            <ul className="space-y-4 text-sm text-surface/50 font-light">
-              <li className="flex justify-between border-b border-surface/10 pb-2">
+            <h3 className="font-heading text-xl text-surface mb-8">Clinic Hours</h3>
+            <ul className="space-y-5 text-[13px] text-surface/40 font-light">
+              <li className="flex justify-between border-b border-surface/5 pb-3">
                 <span>Mon — Thu</span>
-                <span className="text-surface">8:00 AM - 5:00 PM</span>
+                <span className="text-surface/60">8:00 AM - 5:00 PM</span>
               </li>
-              <li className="flex justify-between border-b border-surface/10 pb-2">
+              <li className="flex justify-between border-b border-surface/5 pb-3">
                 <span>Friday</span>
-                <span className="text-surface">8:00 AM - 1:00 PM</span>
+                <span className="text-surface/60">8:00 AM - 1:00 PM</span>
               </li>
               <li className="flex justify-between pb-2">
                 <span>Sat — Sun</span>
-                <span className="text-primary-600 italic">By Appointment</span>
+                <span className="text-primary-500 italic opacity-80">By Appointment Only</span>
               </li>
             </ul>
           </div>

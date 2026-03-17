@@ -19,30 +19,29 @@ const Home = () => {
       <Hero />
 
       {/* Trust Badges */}
-      <section className="bg-white py-12 border-b border-dark/5">
+      <section className="bg-surface py-16 border-b border-dark/5 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-80">
-            {/* Logos represent authority markers */}
-            <h3 className="text-lg font-heading text-dark flex items-center gap-3"><ShieldCheck className="text-primary-600" size={20} /> Authorized Lumineers® Provider</h3>
-            <h3 className="text-lg font-heading text-dark flex items-center gap-3"><Activity className="text-primary-600" size={20} /> Houston Native (UT Branch)</h3>
-            <h3 className="text-lg font-heading text-dark flex items-center gap-3"><Heart className="text-primary-600" size={20} /> Serving West Houston Since 2002</h3>
+          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20">
+            <h3 className="text-[11px] font-semibold text-dark/40 uppercase tracking-[0.3em] flex items-center gap-4"><ShieldCheck className="text-primary-500/50" size={16} /> Authorized Lumineers® Provider</h3>
+            <h3 className="text-[11px] font-semibold text-dark/40 uppercase tracking-[0.3em] flex items-center gap-4"><Activity className="text-primary-500/50" size={16} /> Houston Native (UT Branch)</h3>
+            <h3 className="text-[11px] font-semibold text-dark/40 uppercase tracking-[0.3em] flex items-center gap-4"><Heart className="text-primary-500/50" size={16} /> Serving West Houston Since 2002</h3>
           </div>
         </div>
       </section>
-
+ 
       {/* Services Overview - Bento Grid Transformation */}
-      <section className="py-24 bg-surface relative overflow-hidden">
+      <section className="py-32 bg-surface relative overflow-hidden">
         {/* Background Patterns */}
-        <div className="absolute inset-0 bg-dots-pattern [background-size:20px_20px] opacity-[0.03] pointer-events-none" />
+        <div className="absolute inset-0 bg-dots-pattern [background-size:20px_20px] opacity-[0.05] pointer-events-none" />
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-10">
             <div className="max-w-2xl">
-              <span className="text-primary-600 font-bold tracking-widest uppercase text-xs mb-4 block">Clinical Expertise</span>
-              <h2 className="text-4xl md:text-6xl font-bold font-heading text-dark mb-6 leading-[1.1]">Elite Procedures. <br/><span className="italic font-light opacity-80">Redefining Mastery.</span></h2>
+              <span className="text-primary-600 font-bold tracking-[0.3em] uppercase text-[10px] mb-6 block">Clinical Expertise</span>
+              <h2 className="text-5xl md:text-7xl font-bold font-heading text-dark mb-10 leading-[1]">Elite Procedures. <br/><span className="italic font-light opacity-60 lowercase">Redefining Mastery.</span></h2>
             </div>
-            <p className="text-lg text-gray-600 max-w-sm font-light leading-relaxed">
-              From sophisticated aesthetic makeovers to comprehensive clinical restoration.
+            <p className="text-lg text-dark/60 max-w-sm font-light leading-relaxed mb-4">
+              From sophisticated aesthetic makeovers to comprehensive clinical restoration. Houston's standard for precision.
             </p>
           </div>
 

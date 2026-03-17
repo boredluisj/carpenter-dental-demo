@@ -4,14 +4,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: { 50: '#f0f7fb', 100: '#e1eff7', 200: '#bce0f0', 300: '#86c6e5', 400: '#4ba7d6', 500: '#629ABB', 600: '#4a7ea3', 700: '#3d6784', 800: '#35576f', 900: '#304a5d' },
-        secondary: { 50: '#fffef2', 100: '#fffbd9', 200: '#fff6b3', 300: '#fff04B', 400: '#ffeb26', 500: '#ffe100', 600: '#ccb400', 700: '#998700', 800: '#665a00', 900: '#332d00' },
-        surface: '#F4ECE3',
-        dark: '#5B4840',
+        primary: { 
+          50: '#FDFBF7', 
+          100: '#F7F1DE', 
+          200: '#EEE0BC', 
+          300: '#E1C78F', 
+          400: '#D4AB63', 
+          500: '#C58D41', // Luxury Gold
+          600: '#AB7336', 
+          700: '#8B5A2E', 
+          800: '#714A29', 
+          900: '#5D3D25' 
+        },
+        surface: '#FDFCFB', // Clean Parchment
+        dark: '#1A0F0D',    // Deep Espresso
       },
       fontFamily: {
-        sans: ['Inter', 'Helvetica', 'Arial', 'sans-serif'],
-        heading: ['Sorts Mill Goudy', 'Georgia', 'serif'],
+        sans: ['Outfit', 'Inter', 'system-ui', 'sans-serif'],
+        heading: ['Cormorant Garamond', 'serif'],
       },
       animation: {
         'spotlight': 'spotlight 2s ease .75s 1 forwards',
@@ -39,8 +49,8 @@ export default {
         },
       },
       backgroundImage: {
-        'grid-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40' fill='%235B4840' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E\")",
-        'dots-pattern': "radial-gradient(#5B4840 0.5px, transparent 0.5px)",
+        'grid-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40' fill='%23C58D41' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E\")",
+        'dots-pattern': "radial-gradient(#C58D41 0.5px, transparent 0.5px)",
       },
     },
   },

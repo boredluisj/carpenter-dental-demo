@@ -25,12 +25,12 @@ const Hero = () => {
               <span className="text-surface/60 text-[10px] uppercase tracking-[0.2em] font-medium"> Clinical Mastery Since 2002 </span>
             </div>
             
-            <h1 className="text-6xl md:text-8xl font-heading text-surface mb-8 leading-[1.05] tracking-tight">
+            <h1 className="text-6xl md:text-8xl font-heading text-surface mb-10 leading-[1] tracking-tight">
               Clinical Artistry. <br/>
-              <span className="text-primary-400 italic font-light">Enduring Results.</span>
+              <span className="text-primary-400 italic font-light lowercase">Enduring Results.</span>
             </h1>
             
-            <p className="text-xl text-surface/60 font-light leading-relaxed mb-12 max-w-xl">
+            <p className="text-xl text-surface/70 font-light leading-relaxed mb-12 max-w-xl">
               Dr. Anne M. Carpenter combines two decades of clinical mastery with aesthetic precision to rebuild not just smiles, but confidence. Houston's destination for elite restorative dentistry.
             </p>
 
@@ -39,25 +39,25 @@ const Hero = () => {
                 href="https://www.zocdoc.com/practice/anne-m-carpenter-dds-17609?referrerType=widget" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 bg-primary-600 text-surface font-medium hover:bg-primary-500 transition-all shadow-2xl shadow-primary-900/20"
+                className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 bg-primary-500 text-dark font-semibold hover:bg-primary-400 transition-all shadow-2xl shadow-primary-900/40 rounded-sm"
               >
                 Book via ZocDoc
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <Link 
                 to="/services" 
-                className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 bg-transparent text-surface border border-surface/20 hover:bg-surface/5 transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 bg-transparent text-surface border border-surface/30 hover:bg-surface/10 transition-all rounded-sm font-medium"
               >
                 Clinical Procedures
               </Link>
             </div>
 
-            <div className="mt-16 flex flex-wrap gap-8 opacity-40">
-              <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-surface font-light">
-                <CheckCircle2 size={14} /> Advanced Restoration
+            <div className="mt-20 flex flex-wrap gap-10">
+              <div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-surface/40 font-medium">
+                <CheckCircle2 size={14} className="text-primary-500" /> Advanced Restoration
               </div>
-              <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-surface font-light">
-                <CheckCircle2 size={14} /> IV Sedation Safety
+              <div className="flex items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-surface/40 font-medium">
+                <CheckCircle2 size={14} className="text-primary-500" /> IV Sedation Safety
               </div>
             </div>
           </motion.div>
