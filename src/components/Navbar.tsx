@@ -3,11 +3,13 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 import CarpenterLogo from './CarpenterLogo';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLuxuryClick } from '../hooks/useLuxuryClick';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const playClick = useLuxuryClick();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,6 +51,7 @@ const Navbar = () => {
             <Link 
               key={link.name} 
               to={link.path}
+              onMouseDown={playClick}
               className={`text-[11px] uppercase tracking-[0.2em] font-bold transition-all hover:text-primary-600 ${
                 location.pathname === link.path ? 'text-primary-600' : 'text-dark/60'
               }`}
@@ -58,6 +61,7 @@ const Navbar = () => {
           ))}
           <Link 
             to="/contact" 
+            onMouseDown={playClick}
             className="px-8 py-3 bg-primary-500 text-dark text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-primary-400 transition-all shadow-xl shadow-primary-500/20 rounded-sm"
           >
             Clinical Consultation
@@ -86,6 +90,7 @@ const Navbar = () => {
                 <Link 
                   key={link.name} 
                   to={link.path}
+                  onMouseDown={playClick}
                   className={`text-2xl font-heading font-medium transition-colors ${
                     location.pathname === link.path ? 'text-primary-600' : 'text-dark hover:text-primary-600'
                   }`}
@@ -95,6 +100,7 @@ const Navbar = () => {
               ))}
               <Link 
                 to="/contact" 
+                onMouseDown={playClick}
                 className="mt-4 px-8 py-4 rounded-full bg-primary-600 text-white text-lg font-medium shadow-lg shadow-primary-600/30"
               >
                 Book Free Consultation
