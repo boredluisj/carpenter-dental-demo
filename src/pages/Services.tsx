@@ -142,7 +142,7 @@ const Services = () => {
                   <div className="w-6 h-6 border border-primary-600 flex items-center justify-center shrink-0 mt-1">
                     <CheckCircle size={14} className="text-primary-600" />
                   </div>
-                  <div className="text-dark/80 font-medium">Nonsurgical Periodontal Therapy</div>
+                  <div className="text-dark/80 font-medium">Arestin® Periodontal Therapy</div>
                 </li>
               </ul>
             </div>

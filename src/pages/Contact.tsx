@@ -82,7 +82,8 @@ const Contact = () => {
                     <p className="text-xs font-bold tracking-widest uppercase text-primary-600 mb-2">Office Hours</p>
                     <p className="text-dark/80 font-medium leading-relaxed">
                       Mon – Thur: 8:00 AM – 5:00 PM<br/>
-                      Fri – Sun: Closed
+                      Friday: 8:00 AM – 1:00 PM<br/>
+                      Sat – Sun: By Appointment Only
                     </p>
                   </div>
                 </div>

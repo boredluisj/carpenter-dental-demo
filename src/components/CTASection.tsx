@@ -48,7 +48,15 @@ const CTASection = () => {
               (281) 497-5001
             </a>
           </div>
-          <p className="mt-16 text-dark/30 text-[10px] font-bold tracking-[0.3em] uppercase">Private Clinical Excellence • West Houston Destination</p>
+
+          <div className="mt-12 inline-block border border-primary-500/30 bg-primary-500/5 px-8 py-4 rounded-sm relative">
+            <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-surface px-4 text-[10px] font-bold tracking-[0.2em] text-primary-600 uppercase">New Patient Special</span>
+            <p className="text-dark/80 font-medium tracking-wide">
+              Free Take-Home Whitening after initial visit <span className="text-primary-600 px-2">|</span> $50 Off Dental Care
+            </p>
+          </div>
+
+          <p className="mt-12 text-dark/30 text-[10px] font-bold tracking-[0.3em] uppercase">Private Clinical Excellence • West Houston Destination</p>
         </motion.div>
       </div>
     </section>
