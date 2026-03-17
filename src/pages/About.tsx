@@ -43,7 +43,7 @@ const About = () => {
             >
               <div className="absolute -inset-4 border border-dark/5 -z-10 translate-x-8 translate-y-8" />
               <img 
-                src="https://www.cosmeticdentisthoustontx.com/images/slideshow/houston-dentist12.jpg" 
+                src="/images/modern-clinic.png" 
                 alt="Dr. Carpenter's Houston Practice" 
                 className="w-full h-[600px] object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700"
               />

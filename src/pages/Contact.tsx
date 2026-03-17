@@ -50,7 +50,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-xs font-bold tracking-widest uppercase text-primary-600 mb-2">Practice Location</p>
-                    <p className="text-dark/80 font-medium leading-relaxed">7515 S Main St, Suite 590<br/>Houston, TX 77030</p>
+                    <p className="text-dark/80 font-medium leading-relaxed">12121 Richmond Avenue, Suite 219<br/>Houston, TX 77082</p>
                   </div>
                 </div>
 
@@ -60,7 +60,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-xs font-bold tracking-widest uppercase text-primary-600 mb-2">Direct Line</p>
-                    <p className="text-dark/80 font-medium">(713) 660-0999</p>
+                    <p className="text-dark/80 font-medium">(281) 497-5001</p>
                   </div>
                 </div>
 
@@ -70,7 +70,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-xs font-bold tracking-widest uppercase text-primary-600 mb-2">Clinical Inquiry</p>
-                    <p className="text-dark/80 font-medium">contact@dr-carpenter.com</p>
+                    <p className="text-dark/80 font-medium">office@annecarpenterdds.com</p>
                   </div>
                 </div>
 
