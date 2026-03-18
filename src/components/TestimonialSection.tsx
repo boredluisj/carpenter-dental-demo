@@ -21,7 +21,7 @@ const testimonials = [
     role: "Aesthetic Restoration",
     content: "The aesthetic results Dr. Carpenter achieved with my porcelain crowns are indistinguishable from my natural teeth. Her attention to detail is why she's the best in West Houston. I couldn't be happier with the result.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200&h=200",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200",
   }
 ];
 
